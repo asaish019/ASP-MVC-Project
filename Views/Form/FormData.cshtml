@@ -1,0 +1,24 @@
+﻿@model Application_MVC_Form.Models.Form
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormData</title>
+</head>
+<body>
+    @*Displaying data Submitted on HomePage*@
+    <h2>Submitted Data</h2>
+    <div>Party/Buyer: @Model.Field1</div>
+    <div>LOB: @Model.Field2</div>
+    <div>Approval Status: @Model.Field3</div>
+    <div>Location: @Model.Field4</div>
+    <div>Currency: @Model.Field5</div>
+    <div>Buyer Order No.: @Model.Field6</div>
+</body>
+</html>

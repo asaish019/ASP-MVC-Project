@@ -1,0 +1,101 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8; 
+    padding: 10px 20px; 
+    border-bottom: red solid;
+}
+
+.heading {
+    font-size: 20px;
+    color: #333; 
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-default {
+    width: 80px;
+    height: 35px;
+    color: white;
+    font-size: small;
+    cursor: pointer;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #1383f0;
+    width: 8rem;
+    height: 1.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.new {
+    background-color: green;
+}
+
+.save {
+    background-color: darkblue;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse; 
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#formContainer {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    font-size: small;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+input[type="text"], select, textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+textarea {
+    height: 35px; 
+}
+
+
+.container {
+    background-color: white;
+    margin: 20px;
+    height: 100%;
+    border-radius: 1%;
+    padding: 15px;
+    box-shadow: 0px -2px 20px 0px whitesmoke;
+}

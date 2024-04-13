@@ -1,0 +1,141 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePage</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+  
+</head>
+<body>
+    @using (Html.BeginForm("FormData", "Form", FormMethod.Post, new { id = "formContainer" }))
+
+    {
+        <nav class="navbar">
+            <div class="heading">Order/Sale Order </div>
+            <div class="buttons">
+                <button class="btn-default new" type="reset" onclick="resetForm()"> New</button>
+                <button type="submit" class="btn-default save">Save</button>
+            </div>
+        </nav>
+        <div class="container">
+
+            <form id="formContainer">
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="input1">Party/Buyer</label></td>
+                            <td><select name="Field1">
+                                <option value="">Select item</option>
+                                 <option value="Item1">Item1</option>
+                                </select>
+                            </td>
+                            <td><label for="input2">LOB</label></td>
+                            <td>
+                                <select name="Field2">
+                                    <option value="">Select item</option>
+                                    <option value="Item1">Item1</option>
+                                </select>
+                            </td>
+                            <td><label for="input3">Approval Status</label></td>
+                            <td><input name="Field3" type="text" id="input3"></td>
+
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Location</label></td>
+                            <td><input type="text" id="input1" name="Field4"></td>
+                            <td><label for="input2">Currency</label></td>
+                            <td><input type="text" id="input2" name="Field5"></td>
+                            <td><label for="input3">Buyer Order No.</label></td>
+                            <td><input type="text" name="Field6" id="numericField" min="0" /></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Order No.</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Size Range</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">TNA Template</label></td>
+                            <td><input type="text" id="input3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Sales Order Group</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Total Order City</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">Estimated QTY</label></td>
+                            <td><input type="text" id="input3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Terms Del</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Terms Pay</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">Brand Name</label></td>
+                            <td><input type="text" id="input3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Total Value</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Buyer Department</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">Order Category</label></td>
+                            <td><input type="text" id="input3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Agent</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Agent Sales Person</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">Hit Desc</label></td>
+                            <td><input type="text" id="input3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="input1">Hit Type</label></td>
+                            <td><input type="text" id="input1"></td>
+                            <td><label for="input2">Article No.</label></td>
+                            <td><input type="text" id="input2"></td>
+                            <td><label for="input3">Remarks</label></td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <button class="btn-primary"> Price  </button>
+                            <button class="btn-primary"> Barcode  </button>
+                            <button class="btn-primary"> Add Process </button>
+                            <button class="btn-primary"> Size Weight </button>
+                            <button class="btn-primary"> Role Mapping  </button>
+                            <button class="btn-primary"> Select Size </button>
+                            <button class="btn-primary"> Add Style </button>
+                            Copy Qty <input type="checkbox" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    }
+        <script>
+            function resetForm() {
+                document.getElementById("formContainer").reset();
+            }
+                //function submitForm() {
+                //    document.getElementById('formContainer').submit();
+                //}
+        </script>
+
+
+    </body>
+</html>
